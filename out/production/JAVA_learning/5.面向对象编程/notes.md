@@ -101,9 +101,14 @@ public class Person1 {
 ![image-20210816202652944](https://gitee.com/xdqiang/picbed/raw/master/imgOfBlog/image-20210816202652944.png)
 
 ```java
-Person1 person2= new Person1();
-person2.age=12; //会找不到这个属性
-person2.name="xdiang";
+class test {
+  public static void main(String[] args) {
+    Person1 person2 = new Person1();
+    person2.age=12; //会找不到这个属性
+    person2.name="xdiang";
+  }
+
+}
 ```
 
 
@@ -137,7 +142,9 @@ person2.name="xdiang";
 多个参数可以用逗号隔开
 
 ```java
-public void eat(String food,int eage){
+class test{
+    public void eat(String food,int eage){
+    }
 }
 ```
 
@@ -156,7 +163,7 @@ public void eat(String food,int eage){
   ```java
   public class Person{
   	public void run(){
-  		...;
+  		
   	} 
   	public void showName(){
   		run();
